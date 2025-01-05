@@ -157,10 +157,11 @@
             <img src="assets/images/image-4.jpg" alt="background">
           </div>
           <div class="overlay-inner overlay-video">
-            <video autoplay muted loop>
+            <video id="background-video" autoplay muted loop>
               <source src="assets/video/burner.webm" type="video/webm">
               <source src="assets/video/burner.mp4" type="video/mp4">
-            </video>
+               Your browser does not support the video tag.
+               </video>
           </div>
           <div class="overlay-inner bg-dark opacity-50"></div>
         </div>
@@ -639,6 +640,21 @@
 
     <!-- Theme JS -->
     <script src="assets/js/main.js"></script>
+
+	  <script>
+  function changeVideo(videoPath, videoType) {
+    const videoElement = document.getElementById('background-video');
+    const sourceElement = videoElement.querySelector('source');
+    
+    // Update the source
+    sourceElement.src = videoPath;
+    sourceElement.type = videoType;
+
+    // Reload and play the video
+    videoElement.load();
+    videoElement.play();
+  }
+</script>
 
   </body>
 </html>
