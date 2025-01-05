@@ -20318,3 +20318,25 @@ button.mfp-arrow.mfp-arrow-right::after {
 .slick-dotted.slick-slider.dots-light .slick-dots li button {
   background: #fff;
 }
+
+/* Ensure the video covers the entire section */
+#background-video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Position the video properly */
+.overlay-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Place above the background image */
+}
+
+/* Position the background image as a fallback */
+.bg-image-holder {
+  z-index: 0; /* Place below the video */
+}
