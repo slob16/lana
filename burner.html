@@ -151,22 +151,30 @@
       </section>
 
       <!-- Section - What we do -->
-      <section class="ln-section d-xl-flex" data-anchor="what-we-do" data-tooltip="What we do" data-overlay-color="#2d5aec" data-overlay-opacity="90">
-        <div class="overlay overlay-advanced">
-          <div class="overlay-inner bg-image-holder bg-cover">
-            <img src="assets/images/image-4.jpg" alt="background">
-          </div>
-          <div class="overlay-inner overlay-video">
-            <video id="background-video" autoplay muted loop>
-              <source src="assets/video/burn.webm" type="video/webm">
-              <source src="assets/video/burn.mp4" type="video/mp4">
-	      <img src="assets/images/burn.jpg" alt="Background">
-               </video>
-          </div>
-          <div class="overlay-inner bg-dark opacity-50"></div>
-        </div>
-        <div class="container align-self-xl-center text-white">
-
+<section class="ln-section d-xl-flex" data-anchor="what-we-do" data-tooltip="What we do" data-overlay-color="#2d5aec" data-overlay-opacity="90">
+  <div class="overlay overlay-advanced">
+    <!-- Fallback image -->
+    <div class="overlay-inner bg-image-holder bg-cover">
+      <img src="assets/images/image-4.jpg" alt="background">
+    </div>
+    
+    <!-- Background video -->
+    <div class="overlay-inner overlay-video">
+      <video id="background-video" autoplay muted loop aria-label="Background video showing a burner effect">
+        <source src="assets/video/burner.webm" type="video/webm">
+        <source src="assets/video/burner.mp4" type="video/mp4">
+        <img src="assets/images/image-4.jpg" alt="background">
+      </video>
+    </div>
+    
+    <!-- Dark overlay -->
+    <div class="overlay-inner bg-dark opacity-50"></div>
+  </div>
+  
+  <!-- Content -->
+  <div class="container align-self-xl-center text-white">
+    <!-- Add your content here -->
+  </div>
           <div class="row">
             <div class="col-12 col-xl-5 mb-8 mb-xl-0">
               <h2 class="animated mb-4" data-animation="fadeInUp">What we Do</h2>
